@@ -1,0 +1,12 @@
+@charset "UTF-8";
+h1 {font-size: 2rem; border-bottom: solid 3px #4caf93; text-align: center;}
+h2 {font-size: 1.6rem; border-bottom: solid 1px #4caf93;}
+p {padding-left: 30px;}
+table {padding-left: 30px; border-spacing: 0;}
+table th {background-color: rgba(76, 175, 147, 0.175);}
+table th, td {padding: 5px;}
+table.rule {border-bottom: solid 3px #4caf93; text-align: center; width:100% ;border-collapse: collapse;border:3px solid #4caf93; }
+tr.rule_tr {border-collapse: collapse;border:3px solid #4caf93; }
+
+a{margin:0 auto; display:block; width:1349px; text-align: center;}
+    

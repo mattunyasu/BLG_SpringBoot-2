@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" th:href="@{css/thdemo.css}" href="css/thdemo.css">
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<title>Thymeleaf 基本編</title>
+</head>
+<body>
+	<h1>Thymeleaf 基本編</h1>
+	<h2>1.記述方法</h2>
+	<h3>(1)変数式（${...}）</h3>
+	<p th:text="${msg}"></p>
+	<h3>(2)選択変数式（*{...}）</h3>
+	<p>・選択変数式で記述</p>
+	<table th:object="${object}">
+	    <tr>
+	        <th>ID</th>
+	        <td th:text="*{id}"></td>
+	    </tr>
+	    <tr>
+	        <th>NAME</th>
+	        <td th:text="*{name}"></td>
+	    </tr>
+	    <tr>
+	        <th>WEB</th>
+	        <td th:text="*{value}"></td>
+	    </tr>
+	</table>
+	<p>・変数式で記述</p>
+	<table>
+	    <tr>
+	        <th>ID</th>
+	        <td th:text="${object.id}"></td>
+	    </tr>
+	    <tr>
+	        <th>NAME</th>
+	        <td th:text="${object.name}"></td>
+	    </tr>
+	    <tr>
+	        <th>WEB</th>
+	        <td th:text="${object.value}"></td>
+	    </tr>
+	</table>
+</body>
+</html>

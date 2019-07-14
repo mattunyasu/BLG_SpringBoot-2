@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>demo</title>
+</head>
+<body>
+<li th:each="rule : ${rule}" th:text="${rule.get('Description')}" />
+</body>
+</html>
